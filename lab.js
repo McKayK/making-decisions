@@ -8,6 +8,14 @@
 
 //CODE HERE
 
+let lovesCode = false
+if (lovesCode === true) {
+  console.log('I love to code!');
+}
+else {
+  console.log('Coding has its challenges.');
+}
+
 // For problems 2-3 use the following lines of code:
 var amysAge = 29;
 var brittanisAge = 34;
@@ -21,7 +29,13 @@ var brittanisBirthYear = 1986;
 */
 
 //CODE HERE
-
+if(amysAge > brittanisAge){
+  console.log("Amy is older")
+}else if(brittanisAge > amysAge){
+  console.log("Brittani is older")
+}else {
+  console.log("They are the same age.")
+}
 ////////// PROBLEM 3 //////////
 
 /*
@@ -29,11 +43,16 @@ var brittanisBirthYear = 1986;
 */
 
 //CODE HERE
-
+if(amysBirthYear === brittanisBirthYear) {
+  console.log("Amy & Brittani were born in the same year.")
+}
+else{
+  console.log("Amy & Brittani were NOT born in the same year.")
+}
 ////////// PROBLEM 4 //////////
 
-let temperature = 55;
-let rain = true;
+let temperature = 61;
+let rain = false;
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
@@ -41,7 +60,19 @@ let rain = true;
 */
 
 //CODE HERE
-
+if(temperature >= 80 && rain === true){
+  console.log("Wear a t-shirt and take an umbrella")
+}else if(temperature >= 80 && rain === false){ 
+  console.log("Wear a t-shirt")
+}else if(60 < temperature < 80 && rain === true){
+  console.log("Wear a rain-jacket")
+}else if(60 < temperature && temperature < 80 && rain === false){
+  console.log("Wear a windbreaker")
+}else if (rain === true){
+  console.log("Wear a jacket and carry an umbrella")
+}else {
+  console.log("Wear a jacket")
+}
 ////////// PROBLEM 5 //////////
 
 /*
@@ -49,7 +80,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 0; i < 10; i++) {
+  console.log("Hello!")
+}
 ////////// PROBLEM 6 //////////
 
 /*
@@ -57,7 +90,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for( let i = 0; i < 10; i++){
+  console.log(i + 1)
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -65,7 +100,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 11; i > 0; i--){
+  console.log(i - 1)
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -77,7 +114,10 @@ let passingScore = 7;
 */
 
 //CODE HERE
-
+while(score < passingScore){
+  console.log("Your score is not high enough")
+  score++
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -91,13 +131,24 @@ let passingScore = 7;
 
 let changeMyMind = true
 
-changeMyMind = !thing{
-  console.log(changeMyMind)
+if (changeMyMind = true){
+  changeMyMind = !changeMyMind
+  console.log("I did NOT change my mind (false)")
 }
+else if (changeMyMind = false){
+  changeMyMind = !changeMyMind
+  console.log("I changed my mind (true)")
+}
+
+
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+
+changeMyMind = !changeMyMind
+
+console.log(changeMyMind)
 
 ////////// ADVANCED PROBLEMS //////////
 
